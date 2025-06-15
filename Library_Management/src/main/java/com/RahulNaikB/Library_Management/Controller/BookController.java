@@ -53,7 +53,7 @@ public class BookController
     @PreAuthorize("hasRole('Admin')")
     public ResponseEntity<Void> deleteBook(@PathVariable Long id)
     {
-        bookService.deleteBookId(id);
+        bookService.deleteBookById(id);
         return  ResponseEntity.ok().build();
     }
 }
