@@ -31,7 +31,7 @@ public class AuthenticationService {
     private JwtService jwtService;  // ✅ Make sure you have this service implemented
 
     public User registerNormalUser(RegisterRequestDTO registerRequestDTO) {
-        if (userRepository.findByUserName(registerRequestDTO.getUsername()).isPresent()) {
+        if (userRepository.findByUsername(registerRequestDTO.getUsername()).isPresent()) {
             throw new RuntimeException("User already registered");
         }
 
@@ -48,7 +48,7 @@ public class AuthenticationService {
     }
 
     public User registerAdminUser(RegisterRequestDTO registerRequestDTO) {
-        if (userRepository.findByUserName(registerRequestDTO.getUsername()).isPresent()) {
+        if (userRepository.findByUsername(registerRequestDTO.getUsername()).isPresent()) {
             throw new RuntimeException("User already registered");
         }
 
@@ -75,7 +75,7 @@ public class AuthenticationService {
         );
 
         // Fetch the authenticated user
-        User user = userRepository.findByUserName(loginRequestDTO.getUsername())
+        User user = userRepository.findByUsername(loginRequestDTO.getUsername())
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
         // Generate JWT

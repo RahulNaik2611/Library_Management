@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/libraryManagement
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # or create, validate, etc.
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+
+
+jwt:
+  secretkey: Y9z2XK!q8wA3sDfL#eT6GmNpRx1UoVbC  # 32 characters = 256 bits
+  expiration: 3600000

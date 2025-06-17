@@ -38,7 +38,7 @@ public class IssueRecordService {
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
 
         // Fetch the user by username
-        User user = userRepository.findByUserName(username)
+        User user = userRepository.findByUsername(username)
                 .orElseThrow(() -> new RuntimeException("User not found: " + username));
 
         // Create and populate IssueRecord

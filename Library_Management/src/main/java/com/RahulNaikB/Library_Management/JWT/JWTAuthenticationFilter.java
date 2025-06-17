@@ -58,7 +58,7 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter
         {
             //Get the user details from database;
 
-            var userDetails = userRepository.findByUserName(username)
+            var userDetails = userRepository.findByUsername(username)
                     .orElseThrow(()-> new RuntimeException("user not found"));
 
 
