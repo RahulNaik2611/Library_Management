@@ -5,12 +5,6 @@ This is a full-fledged backend system for a library, allowing admins to manage b
 
 ---
 
-## 🌐 Live API (Optional)
-
-You can deploy this project to services like **Render**, **Heroku**, or **AWS EC2**. Make sure to update your database credentials and environment variables.
-
----
-
 ## 💡 Key Highlights
 
 - ✅ RESTful API using Spring Boot 3.x
@@ -100,16 +94,6 @@ POST /books/addbook
 
 ---
 
-## 👨‍💻 Contributor Info
-
-**B Rahul Naik**  
-🔧 Java Backend Developer – Spring Boot | SQL | JWT  
-📫 Email: banavathrahulnaik26@gmail.com  
-🔗 LinkedIn: [rahulnaik-banavath](https://www.linkedin.com/in/rahulnaik-banavath-293699367)
-
----
-
-
 ## 🏗️ Layered Architecture
 
 ```
@@ -185,6 +169,15 @@ erDiagram
         long book_id FK
     }
 ```
+
+## 👨‍💻 Contributor Info
+
+**B Rahul Naik**  
+🔧 Java Backend Developer – Spring Boot | SQL | JWT  
+📫 Email: banavathrahulnaik26@gmail.com  
+🔗 LinkedIn: [rahulnaik-banavath](https://www.linkedin.com/in/rahulnaik-banavath-293699367)
+
+---
 
 
 ## 🧾 License
