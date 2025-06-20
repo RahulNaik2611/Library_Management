@@ -118,7 +118,7 @@ src/
 2. **Response** → DTO → Service → Controller → Client
 
 
-
+```
 ## 🛡️ Security Flow
 
 ```mermaid
